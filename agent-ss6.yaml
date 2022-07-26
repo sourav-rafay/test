@@ -1,7 +1,7 @@
 apiVersion: gitops.k8smgmt.io/v3
 kind: Agent
 metadata:
-  name: ss6
+  name: ss7
   project: sourav
 spec:
   active: true
