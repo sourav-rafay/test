@@ -1,0 +1,18 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: sync-test
+  project: sourav
+spec:
+  active: true
+  cluster:
+    name: sourav-1-eks-06072022
+  type: Cluster
+  version: r1.16.0
+status:
+  conditionStatus: 2
+  conditionType: AgentHealthy
+  lastUpdated:
+    nanos: 175210465
+    seconds: 1658823977
+  reason: Healthy
