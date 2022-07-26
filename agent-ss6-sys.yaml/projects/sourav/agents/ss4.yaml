@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: ss4
+  project: sourav
+spec:
+  active: true
+  cluster:
+    name: sourav-docker-test-july11
+  type: Cluster
+  version: r1.16.1
