@@ -8,4 +8,4 @@ spec:
   cluster:
     name: sourav-1-eks-06072022
   type: Cluster
-  version: latest
+  version: r1.16.0
