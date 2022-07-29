@@ -1,0 +1,16 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: avinash-terr
+  project: sourav
+spec:
+  agents:
+  - {}
+  credentials:
+    password: sealed://credentials.password
+    username: sourav@rafay.co
+  endpoint: https://github.com/avinash-rafay/terraform-guides.git
+  options: {}
+  secret:
+    name: file://artifacts/avinash-terr/sealed-secret.yaml
+  type: Git

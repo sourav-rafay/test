@@ -1,9 +1,11 @@
 apiVersion: gitops.k8smgmt.io/v3
 kind: Agent
 metadata:
-  name: ss-d3
+  name: ss1
   project: sourav
 spec:
-  active: false
-  type: Docker
+  active: true
+  cluster:
+    name: sourav-1-eks-06072022
+  type: Cluster
   version: r1.16.0

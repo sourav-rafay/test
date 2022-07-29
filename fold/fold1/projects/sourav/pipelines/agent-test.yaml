@@ -1,0 +1,34 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: agent-test
+  project: sourav
+spec:
+  active: true
+  sharing:
+    enabled: false
+  stages:
+  - config:
+      destinationRepo: {}
+      gitToSystemSync: true
+      includedResources:
+      - name: '*'
+      sourceAsDestination: true
+      sourceRepo:
+        path:
+          name: fold/fold1
+        repository: ss-test
+        revision: main
+      systemToGitSync: true
+    name: s1
+    type: SystemSync
+  triggers:
+  - config:
+      repo:
+        paths:
+        - name: fold/fold1
+        provider: Github
+        repository: ss-test
+        revision: main
+    name: t1
+    type: Webhook
