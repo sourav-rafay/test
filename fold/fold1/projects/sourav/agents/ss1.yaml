@@ -4,7 +4,7 @@ metadata:
   name: ss1
   project: sourav
 spec:
-  active: true
+  active: false
   cluster:
     name: sourav-1-eks-06072022
   type: Cluster
