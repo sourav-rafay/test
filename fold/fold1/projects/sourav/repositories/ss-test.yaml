@@ -4,6 +4,8 @@ metadata:
   name: ss-test
   project: sourav
 spec:
+  agents:
+  - name: sync-test
   credentials:
     password: sealed://credentials.password
     username: sourav-rafay
