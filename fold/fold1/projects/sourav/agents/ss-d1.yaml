@@ -4,6 +4,6 @@ metadata:
   name: ss-d1
   project: sourav
 spec:
-  active: true
+  active: false
   type: Docker
   version: r1.16.0
